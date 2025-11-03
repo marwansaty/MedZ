@@ -248,9 +248,14 @@ window.addEventListener("load", () => {
   });
 });
 
+const submitBtn = form.querySelector('button[type="submit"]');
+let isSubmitting = false;
+
 /* --- submit handler --- */
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
+
+  if (isSubmitting) return; // prevent multiple submits
 
   let valid = true;
 
@@ -263,6 +268,10 @@ form.addEventListener("submit", async (e) => {
   });
 
   if (!valid) return; // stop submission if errors exist
+
+  isSubmitting = true;
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Submitting...";
 
   const formData = new FormData(form);
 
@@ -290,6 +299,10 @@ form.addEventListener("submit", async (e) => {
   } catch (error) {
     console.error("Error submitting form:", error);
     alert("❌ Error submitting form. Please try again later.");
+  } finally {
+    isSubmitting = false;
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Submit";
   }
 });
 
