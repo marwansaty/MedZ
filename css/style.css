@@ -434,6 +434,7 @@ header .container {
 
 /* Hero Section */
 .hero {
+  position: relative;
   margin-block-start: 250px;
   display: flex;
   justify-content: space-between;
@@ -837,7 +838,8 @@ header .container {
   flex: 1;
 }
 .contact form {
-  max-width: 400px;
+  width: 100%;
+  max-width: 450px;
   display: grid;
   gap: 1.5rem;
 }
@@ -976,7 +978,8 @@ header .container {
   .contact {
     flex-direction: column;
     text-align: center;
-    gap: 1;
+    gap: 3rem;
+    margin-block-start: 80px;
   }
   .contact > * {
     margin-inline: auto;
