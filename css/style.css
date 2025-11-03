@@ -434,7 +434,7 @@ header .container {
 
 /* Hero Section */
 .hero {
-  position: relative;
+  /* position: relative; */
   margin-block-start: 250px;
   display: flex;
   justify-content: space-between;
