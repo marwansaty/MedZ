@@ -237,7 +237,7 @@ form.querySelectorAll(".req").forEach((input) => {
   });
 });
 
-/* --- 🧠 NEW: validate autofilled inputs on page load --- */
+/* --- validate autofilled inputs on page load --- */
 window.addEventListener("load", () => {
   form.querySelectorAll(".req").forEach((input) => {
     const error = input.nextElementSibling;
