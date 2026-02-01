@@ -173,8 +173,9 @@ const form = document.getElementById("contactForm");
 // Regex patterns
 const namePattern = /^[A-Za-z\u0600-\u06FF\s]{3,}$/;
 const phonePattern = /^(?:\+?20\s?(?:10|11|12|15)\d{8}|01[0125]\d{8})$/;
-const emailPattern =
-  /^[A-Za-z0-9._%+-]+@((gmail|yahoo|outlook|hotmail|icloud|live|aol)\.com|edu\.eg|gov\.eg)$/;
+// const emailPattern =
+//   /^[A-Za-z0-9._%+-]+@((gmail|yahoo|outlook|hotmail|icloud|live|aol)\.com|edu\.eg|gov\.eg)$/;
+const emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 
 /* --- helper function to validate one input --- */
 function validateInput(input, error) {

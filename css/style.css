@@ -509,6 +509,7 @@ header .container {
 .pharma__btns {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
