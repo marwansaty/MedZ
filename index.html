@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedZ | Guiding Careers, Shaping the Future</title>
+    <meta
+      name="description"
+      content="MedZ empowers the next generation of healthcare leaders in MENA through summits, programs, and mentorship."
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="imgs/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="imgs/favicon-512x512.png"
+    />
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="MedZ - Guiding Careers, Shaping the Future"
+    />
+    <meta
+      property="og:description"
+      content="Empowering the next generation of healthcare leaders in MENA with real-world insights, mentorship, and opportunities."
+    />
+    <meta property="og:image" content="https://medz-eg.com/imgs/preview.jpg" />
+    <meta property="og:url" content="https://medz-eg.com/" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card (for Twitter/X previews) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="MedZ - Guiding Careers, Shaping the Future"
+    />
+    <meta
+      name="twitter:description"
+      content="Empowering the next generation of healthcare leaders in MENA with real-world insights, mentorship, and opportunities."
+    />
+    <meta name="twitter:image" content="https://medz-eg.com/imgs/preview.jpg" />
+
+    <!-- Fonts -->
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS (Animate On Scroll) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- popperJs -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1641117653248679");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1641117653248679&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <header>
+      <div id="pageHeader" class="container">
+        <a class="logo" href=".">
+          <img class="logo__img" src="imgs/logo-dark.svg" alt="logo" />
+          <span class="logo__text">MedZ</span>
+        </a>
+
+        <nav>
+          <div class="overlay"></div>
+          <button id="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="drawer">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#core">Core Values</a></li>
+              <li><a href="#test">Testimonials</a></li>
+              <li><a href="#pharm">PharmaZ</a></li>
+              <li><a class="btn-magenta" href="#reg">Register Now</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero container">
+        <div class="hero__info">
+          <h1 data-aos="fade-up" class="hero__title">
+            <span>Guiding Careers,</span> <br />
+            Shaping the Future
+          </h1>
+          <h3
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="hero__subheading subheading"
+          >
+            Empowering the next generation of healthcare leaders
+          </h3>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="150" class="hero__pharma">
+          <div class="hero__event">
+            <img src="/imgs/pharmaz-logo.png" alt="PharmaZ logo" />
+            <p>The Biggest Pharmacy Career in MENA</p>
+          </div>
+          <div class="pharma__btns">
+            <a class="outline__btn" href="#reg">Register Now</a>
+            <a class="filled-btn" href="#">More Details</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+        <div data-aos="fade-up" class="who">
+          <h2>Who Are We?</h2>
+          <p>
+            MedZ is the first professional platform in MENA dedicated to raising
+            healthcare awareness through an integrated 360° model that engages
+            all key stakeholders: students, fresh graduates, healthcare
+            professionals, and the general public. Through a dynamic mix of
+            online shows, huge campaigns, offline programs, and interactive
+            summits, MedZ empowers the community with real-world insights,
+            professional exposure, and direct access to career development
+            resources. Whether it's spreading awareness, discovering emerging
+            career paths, connecting with industry experts, or gaining hands-on
+            experience.
+          </p>
+        </div>
+      </section>
+
+      <section class="core-values container">
+        <h2 data-aos="fade-up" id="core" class="main-title">Core values</h2>
+        <div class="cores">
+          <div data-aos="zoom-in" data-aos-delay="150" class="box">
+            <div class="box__heading">
+              <i class="box__icon" data-lucide="hand-fist"></i>
+              <h3 class="box__title">Empowerment</h3>
+            </div>
+            <p class="box__description">
+              We equip employees and students with the tools and insights they
+              need to take control of their careers.
+            </p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="250" class="box">
+            <div class="box__heading">
+              <i class="box__icon" data-lucide="brain"></i>
+              <h3 class="box__title">Innovation</h3>
+            </div>
+            <p class="box__description">
+              We embrace creativity in how we deliver knowledge, connect
+              experts, and present.
+            </p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="350" class="box">
+            <div class="box__heading">
+              <i class="box__icon" data-lucide="scan-eye"></i>
+              <h3 class="box__title">Accessibility</h3>
+            </div>
+            <p class="box__description">
+              We believe everyone, regardless of background, should have access
+              to guidance and resources.
+            </p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="450" class="box">
+            <div class="box__heading">
+              <i class="box__icon" data-lucide="zap"></i>
+              <h3 class="box__title">Impact</h3>
+            </div>
+            <p class="box__description">
+              We measure success not by reach, but by the real difference we
+              make in the community.
+            </p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="550" class="box">
+            <div class="box__heading">
+              <i class="box__icon" data-lucide="shield"></i>
+              <h3 class="box__title">Integrity</h3>
+            </div>
+            <p class="box__description">
+              We are committed to transparency, trust, and professionalism in
+              every interaction.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2 data-aos="fade-up" id="test" class="main-title">testimonials</h2>
+        <div class="testimonials">
+          <div data-aos="zoom-in" class="box">
+            <div class="box__heading">
+              <img src="imgs/test-2.png" alt="" />
+
+              <div class="box__info">
+                <h3 class="subheading box__title">Dr. Kareem Al-Farsi</h3>
+                <p class="box__subtitle">
+                  Senior Supervisor Clinical Pharmacist at 57357
+                </p>
+              </div>
+            </div>
+            <p class="box__description">
+              I'm really happy that we now have something like this in Egypt. I
+              wish it had existed back in my days — something that delivers
+              valuable insights and information in a simple, accessible way for
+              everyone in our field.
+            </p>
+          </div>
+          <div data-aos="zoom-in" class="box">
+            <div class="box__heading">
+              <img src="imgs/test-3.png" alt="" />
+
+              <div class="box__info">
+                <h3 class="subheading box__title">Dr. Ahmed Moawad</h3>
+                <p class="box__subtitle">BUD & Pharma Industry Expert</p>
+              </div>
+            </div>
+            <p class="box__description">
+              I was really excited about my experience today with MedZ. I truly
+              enjoyed seeing the team's level of curiosity and their passion for
+              spreading this knowledge to a large number of students. I highly
+              encourage all my colleagues to take part in initiatives like this.
+            </p>
+          </div>
+          <div data-aos="zoom-in" class="box">
+            <div class="box__heading">
+              <img src="imgs/test-1.png" alt="" />
+
+              <div class="box__info">
+                <h3 class="subheading box__title">Dr. Mahmoud Bravo</h3>
+                <p class="box__subtitle">International Corporate Trainer</p>
+              </div>
+            </div>
+            <p class="box__description">
+              I strongly support initiatives like this from MedZ. They've truly
+              inspired me with their level of creativity and quality. Their
+              thinking is broader and more unique, and ever since I started with
+              them, everything has felt different. I 'm confident they're adding
+              great value to our field.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="history container">
+        <h2 data-aos="fade-up" id="history" class="main-title">History</h2>
+        <div data-aos="fade-up" class="medz-cast">
+          <div class="cast__heading">
+            <i class="cast__icon" data-lucide="mic-vocal"></i>
+            <h2 class="cast__title">The MedZ Cast</h2>
+          </div>
+          <p class="cast__description">
+            The MedZ Cast is a pioneering initiative by MedZ aimed at empowering
+            Egypt's pharmacy students by connecting them directly with the
+            country's top healthcare leaders. The podcast delivers real-world
+            insights, personal stories, and actionable advice—connecting the
+            dots between academic theory and professional practice.
+          </p>
+          <div class="cast__info">
+            <div class="cast__playlist">
+              <div class="playlist__info">
+                <h2><span>+300K</span> Views</h2>
+                <p class="subheading">On All Social Media Platforms</p>
+              </div>
+              <a
+                class="outline__btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/playlist?list=PLvDTDUoOPF9iWs5ETxj51sq6Hpk30pS5Z"
+                >Watch Here</a
+              >
+            </div>
+            <div class="thumbnails">
+              <img
+                data-aos="zoom-in"
+                class="thumbnail"
+                src="imgs/thumbnail-1.jpg"
+                alt="thumbnail"
+              />
+              <img
+                data-aos="zoom-in"
+                class="thumbnail"
+                src="imgs/thumbnail-2.jpg"
+                alt="thumbnail"
+              />
+              <img
+                data-aos="zoom-in"
+                class="thumbnail"
+                src="imgs/thumbnail-3.jpg"
+                alt="thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our container">
+        <h2 data-aos="fade-up" id="pharm" class="main-title">
+          Our Next Big Thing
+        </h2>
+        <div data-aos="fade-up" class="pharmaz">
+          <div class="cast__heading">
+            <img class="cast__icon" src="imgs/pharmaz-logo.png" alt="" />
+            <h2 class="cast__title">PharmaZ</h2>
+          </div>
+          <p class="cast__description">
+            <span>The Biggest</span> Pharmacy Career Gathering in MENA PharmaZ
+            is the region's first youth-focused dedicated to empowering the next
+            generation of the pharmacy leaders. pharmaZ brings together
+            entry-level employees, fresh graduates, students, industry leaders,
+            and healthcare professionals for a unique learning and networking
+            experience.
+          </p>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="150" class="pharmaz__boxes">
+          <div class="prs pharmaz__box" data-popup="popup1">
+            <i class="clicks" data-lucide="mouse-pointer-click"></i>
+            <h1 class="box__title">+15</h1>
+            <p class="box__description">Tracks</p>
+          </div>
+
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="250"
+            class="prs pharmaz__box"
+            data-popup="popup2"
+          >
+            <i class="clicks" data-lucide="mouse-pointer-click"></i>
+            <h1 class="box__title">+100k EGP</h1>
+            <p class="box__description">Prizes</p>
+          </div>
+
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="350"
+            class="prs pharmaz__box"
+            data-popup="popup3"
+          >
+            <i class="clicks" data-lucide="mouse-pointer-click"></i>
+            <h1 class="box__title">+15</h1>
+            <p class="box__description">Sessions</p>
+          </div>
+
+          <div data-aos="zoom-in" data-aos-delay="450" class="pharmaz__box">
+            <h1 class="box__title">+40</h1>
+            <p class="box__description">Leading Pharmaceutical Companies</p>
+          </div>
+
+          <div data-aos="zoom-in" data-aos-delay="550" class="pharmaz__box">
+            <h1 class="box__title">+60</h1>
+            <p class="box__description">Speakers</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2 data-aos="fade-up" class="main-title">Speakers</h2>
+        <div class="swiper speakers-swiper">
+          <div class="swiper-wrapper speakers">
+            <div class="swiper-slide speaker">
+              <img
+                src="imgs/speaker-1.png"
+                alt="A photo of Dr. Ereny Mamdouh"
+              />
+              <div class="speaker__info">
+                <h3 class="subheading speaker__title">
+                  Dr. Ereny Mamdouh Labib
+                </h3>
+                <p class="speaker__subtitle">
+                  Regional Sales Manager - Surgical at Alcon Egypt
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide speaker">
+              <img
+                src="imgs/speaker-2.jpg"
+                alt="A photo of Dr. Heba Elnokoudy"
+              />
+              <div class="speaker__info">
+                <h3 class="subheading speaker__title">Dr. Heba Elnokoudy</h3>
+                <p class="speaker__subtitle">
+                  Clinical research at king college London 𝐎𝐧𝐜𝐨𝐥𝐨𝐠𝐲 𝐏𝐡𝐚𝐫𝐦𝐚𝐜𝐲
+                  𝐋𝐞𝐚𝐝𝐞𝐫, 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡𝐞𝐫, 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐞𝐝 𝐈𝐧𝐬𝐭𝐫𝐮𝐜𝐭𝐨𝐫 & 𝐂𝐚𝐫𝐞𝐞𝐫 𝐒𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐬𝐭
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide speaker">
+              <img
+                src="imgs/speaker-3.png"
+                alt="A photo of Dr. Muhammad Hosni"
+              />
+              <div class="speaker__info">
+                <h3 class="subheading speaker__title">Dr. Muhammad Hosni</h3>
+                <p class="speaker__subtitle">
+                  Quality assurance and Lean Manager
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide speaker">
+              <img src="imgs/speaker-4.jpg" alt="A photo of Dr. Asmaa Salman" />
+              <div class="speaker__info">
+                <h3 class="subheading speaker__title">Dr. Asmaa Salman</h3>
+                <p class="speaker__subtitle">
+                  General Director of Marketing & Business Development at Egypt
+                  Healthcare Authority
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2 data-aos="fade-up" class="main-title">Sponsors</h2>
+
+        <div class="sponsors">
+          <div class="sponsor sponsor-1">
+            <img
+              src="imgs/sponsors/sponsor-1.png"
+              alt="beyond insurance Logo"
+            />
+          </div>
+          <div class="sponsor sponsor-2">
+            <img src="imgs/sponsors/sponsor-2.png" alt="fresenius kabi logo" />
+          </div>
+          <div class="sponsor sponsor-3">
+            <img src="imgs/sponsors/sponsor-3.png" alt="inova logo" />
+          </div>
+          <div class="sponsor sponsor-4">
+            <img
+              class="sponsor-logo"
+              src="imgs/sponsors/sponsor-4.png"
+              alt="wellness logo"
+            />
+          </div>
+          <div class="sponsor sponsor-5">
+            <img src="imgs/sponsors/sponsor-5.jpeg" alt="utopia logo" />
+          </div>
+          <div class="sponsor sponsor-6">
+            <img src="imgs/sponsors/sponsor-6.jpeg" alt="utopia logo" />
+          </div>
+          <div class="sponsor sponsor-7">
+            <img src="imgs/sponsors/sponsor-7.jpeg" alt="betadine logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="features container">
+        <h2 data-aos="fade-up" class="main-title">Features</h2>
+
+        <div data-aos="fade-up" class="feature box">
+          <div class="box__heading">
+            <i class="box__icon" data-lucide="handshake"></i>
+
+            <div class="box__info">
+              <h3 class="box__title">Employment Fair</h3>
+              <p class="box__subtitle">
+                Connecting Future Healthcare Leaders with Top Employers
+              </p>
+            </div>
+          </div>
+          <p class="box__description">
+            Our Employment Fair is a dynamic platform where pharmacy fresh grads
+            and students get the chance to engage directly with leading
+            employers across the healthcare industry. The fair bridges the gap
+            between education and employment by creating meaningful connections,
+            offering exposure to diverse career pathways, internships, and job
+            opportunities.
+          </p>
+          <div class="pharmaz__boxes">
+            <div data-aos="zoom-in" class="pharmaz__box">
+              <h3 class="box__title">Leading Pharmaceutical Companies</h3>
+            </div>
+            <div data-aos="zoom-in" class="pharmaz__box">
+              <h3 class="box__title">Top Hospitals in Egypt</h3>
+            </div>
+            <div data-aos="zoom-in" class="pharmaz__box">
+              <h3 class="box__title">Cosmetics and Self Care Companies</h3>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="feature box">
+          <div class="box__heading">
+            <i class="box__icon" data-lucide="brain"></i>
+            <div class="box__info">
+              <h3 class="box__title">FemiMed</h3>
+              <p class="box__subtitle">
+                Empowering Women in Healthcare & Beauty Entrepreneurship
+              </p>
+            </div>
+          </div>
+          <p class="box__description">
+            FemiMed is a special platform within PharmaZ Summit dedicated to
+            celebrating and empowering women in the healthcare and cosmetics
+            industries. It features an inspiring panel discussion with top
+            female leaders sharing their success stories, challenges, and
+            insights to inspire the next generation of women professionals.
+          </p>
+          <div class="pharmaz__boxes">
+            <div data-aos="zoom-in" class="pharmaz__box">
+              <h3 class="box__title">Success Stories</h3>
+              <p class="box__description">
+                Female Leaders in Pharmaceuticals Industry
+              </p>
+            </div>
+            <div data-aos="zoom-in" class="pharmaz__box">
+              <h3 class="box__title">+30k EGP Prizes</h3>
+              <p class="box__description">
+                Cosmetics Small Businesses Competition
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="feature box">
+          <div class="box__heading">
+            <i class="box__icon" data-lucide="trophy"></i>
+            <div class="box__info">
+              <h3 class="box__title">Mind Arena Competition</h3>
+              <p class="box__subtitle">Where Pharmacy Meets Innovation</p>
+            </div>
+          </div>
+          <p class="box__description">
+            Mind Arena is an exciting competition designed for pharmacy students
+            and young professionals to unleash their creativity and business
+            acumen. Participants are challenged to take a real pharmaceutical
+            product and develop a complete go-to-market strategy — including
+            business planning, marketing, sales, branding, and target audience
+            selection.
+          </p>
+        </div>
+      </section>
+
+      <section class="registration container">
+        <h2 data-aos="fade-up" id="reg" class="main-title">Registration</h2>
+        <div data-aos="fade-up" class="box">
+          <h3>Register for the biggest pharmacy career gathering in MENA</h3>
+          <a href="#pharm" class="filled-btn">more details</a>
+        </div>
+      </section>
+
+      <section class="contact container">
+        <h2 class="main-title">Contact Us</h2>
+        <form data-aos="fade-up" id="contactForm" autocomplete="off">
+          <input
+            class="req"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="req"
+            placeholder="Your phone number"
+            required
+          />
+          <input
+            class="req"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Your email"
+          />
+          <input
+            id="uni"
+            name="uni"
+            type="text"
+            placeholder="Your university"
+          />
+          <input
+            id="college"
+            name="college"
+            type="text"
+            placeholder="Your college"
+          />
+          <select id="ticket" name="ticket" required>
+            <option value="" disabled selected hidden>
+              Choose your ticket
+            </option>
+            <option value="Individual ticket">Individual ticket</option>
+            <option value="Group ticket">Group ticket</option>
+          </select>
+          <button type="submit" class="filled-btn">Submit</button>
+        </form>
+
+        <div data-aos="fade-up" class="contact__right">
+          <div class="pay box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              eius, aspernatur dolores perspiciatis laudantium dolorem, minus
+              esse consequuntur nihil earum voluptatum nostrum recusandae fuga
+              dignissimos soluta excepturi nobis expedita molestiae!
+            </p>
+            <div class="pay__btn">
+              <img src="imgs/visa.png" alt="" />
+              <a
+                target="_blank"
+                href="https://app.fawaterk.com/pg/pharmaz"
+                class="filled-btn"
+                >Pay By Visa</a
+              >
+            </div>
+          </div>
+          <div class="contact__info box">
+            <h1>Contact Us</h1>
+            <h3 class="email">
+              <i class="icon" data-lucide="mail"></i>
+              <a class="email__text">info@medz-eg.com</a>
+            </h3>
+            <div class="links">
+              <a
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/share/1CT48vbtVv/"
+                ><i data-lucide="facebook"></i
+              ></a>
+              <a
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/company/medz-eg/"
+                ><i data-lucide="linkedin"></i
+              ></a>
+              <a
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/themedz.eg?igsh=bHBqbzAzZjIwYjh2&utm_source=qr"
+                ><i data-lucide="instagram"></i
+              ></a>
+              <a
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.tiktok.com/@themedz.eg?_t=ZS-8yydRB9uFwF&_r=1"
+              >
+                <img src="imgs/tiktok.svg" />
+              </a>
+              <a
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://youtube.com/@themedz.eg1?si=wOKL35s8GLR71LJs"
+                ><i data-lucide="youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="popup1" class="popup">
+        - Entrepreneurship<br />
+        - Research<br />
+        - Marketing<br />
+        - Sales<br />
+        - AI & Digitalization<br />
+        - Medical Affairs<br />
+        - Regulatory Affairs<br />
+        - Operations "from material to drug"<br />
+        - QA & QC<br />
+        - Females<br />
+        - Clinical Pharmacy<br />
+        - Nutrition<br />
+        - Cosmetics<br />
+        - Personal Branding<br />
+        - Supply Chain
+      </div>
+      <div id="popup2" class="popup">
+        - Mind Arena Competition<br />
+        - Cosmetics Competition
+      </div>
+      <div id="popup3" class="popup">
+        - Medical Affairs. <br />
+        - Regulatory Affairs. <br />
+        - Sales. <br />
+        - Marketing. <br />
+        - From Business to Startup. <br />
+        - Personal Branding. <br />
+        - Quality. <br />
+        - AI. <br />
+        - Research. <br />
+        - Nutrition <br />
+        - Cosmetics <br />
+        - How to choose your ideal career <br />
+        - Supply Chain <br />
+        - Production <br />
+        - Community Pharmacy <br />
+        -Clinical Pharmacy
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer__info">
+          <div class="footer__logo">
+            <div class="footer__logo_heading">
+              <img src="imgs/logo-light.svg" />
+              <span class="footer__title">MedZ</span>
+            </div>
+            <p>
+              Guiding Careers, Shaping the Future Empowering the next generation
+              of healthcare leaders
+            </p>
+          </div>
+          <ul>
+            <li class="title subheading">About</li>
+            <li><a class="footer__link" href="#about">Who are we?</a></li>
+            <li><a class="footer__link" href="#core">Core Values</a></li>
+          </ul>
+          <ul>
+            <li class="title subheading">What We Do</li>
+            <li><a class="footer__link" href="#test">Testimonials</a></li>
+            <li><a class="footer__link" href="#history">History</a></li>
+            <li><a class="footer__link" href="#pharm">PharmaZ</a></li>
+          </ul>
+          <ul>
+            <li class="title subheading">Contact</li>
+            <li>
+              <a class="footer__link email__text">info@medz-eg.com</a>
+            </li>
+            <li class="links">
+              <a
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/share/1ELs5y6vJm/?mibextid=wwXIfr"
+                ><i data-lucide="facebook"></i
+              ></a>
+              <a
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/company/medz-eg/"
+                ><i data-lucide="linkedin"></i
+              ></a>
+              <a
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/themedz.eg?igsh=bHBqbzAzZjIwYjh2&utm_source=qr"
+                ><i data-lucide="instagram"></i
+              ></a>
+              <a
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.tiktok.com/@themedz.eg?_t=ZS-8yydRB9uFwF&_r=1"
+              >
+                <img src="imgs/tiktok-light.svg" />
+              </a>
+              <a
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://youtube.com/@themedz.eg1?si=wOKL35s8GLR71LJs"
+                ><i data-lucide="youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copy">Copyright © 2025 MedZ - All rights reserved.</p>
+      </div>
+    </footer>
+    <a href="#reg" id="register" title="Go to top">Register Now</a>
+
+    <!-- main -->
+    <script type="module" src="js/main.js"></script>
+    <!-- Lucide -->
+    <script>
+      lucide.createIcons();
+    </script>
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // speed of animation
+        once: true, // only animate once when scrolling down
+        offset: 100, // trigger point (px from top of screen)
+      });
+    </script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
