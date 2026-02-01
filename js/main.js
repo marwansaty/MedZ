@@ -337,6 +337,7 @@ const speakersSwiper = new Swiper(".speakers-swiper", {
   autoplay: {
     delay: 2500, // time between slides in milliseconds (3 seconds here)
     disableOnInteraction: false, // continue autoplay after user interacts (swipe/click)
+    pauseOnMouseEnter: true,
   },
 
   breakpoints: {

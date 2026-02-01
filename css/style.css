@@ -897,6 +897,9 @@ header .container {
   );
 }
 .sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 110px;
   height: 110px;
   position: absolute;
@@ -907,15 +910,14 @@ header .container {
   animation-iteration-count: infinite;
 }
 
+.sponsors:hover .sponsor {
+  animation-play-state: paused;
+}
+
 .sponsor-logo {
   background: #111;
   padding: 20px;
   border-radius: 12px;
-}
-.sponsor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .sponsor img {
