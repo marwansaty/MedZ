@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -77,6 +77,12 @@
     <!-- popperJs -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
 
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -103,7 +109,7 @@
         window,
         document,
         "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
+        "https://connect.facebook.net/en_US/fbevents.js",
       );
       fbq("init", "1641117653248679");
       fbq("track", "PageView");
@@ -159,6 +165,16 @@
           >
             Empowering the next generation of healthcare leaders
           </h3>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="150" class="hero__pharma">
+          <div class="hero__event">
+            <img src="/imgs/pharmaz-logo.png" alt="PharmaZ logo" />
+            <p>The Biggest Pharmacy Career in MENA</p>
+          </div>
+          <div class="pharma__btns">
+            <a class="outline__btn" href="#reg">Register Now</a>
+            <a class="filled-btn" href="#">More Details</a>
+          </div>
         </div>
       </section>
 
@@ -404,6 +420,100 @@
         </div>
       </section>
 
+      <section class="container">
+        <h2 data-aos="fade-up" class="main-title">Speakers</h2>
+        <div class="swiper speakers-swiper">
+          <div class="swiper-wrapper speakers">
+            <div class="swiper-slide speaker">
+              <img
+                src="imgs/speaker-1.png"
+                alt="A photo of Dr. Ereny Mamdouh"
+              />
+              <div class="speaker__info">
+                <h3 class="subheading speaker__title">
+                  Dr. Ereny Mamdouh Labib
+                </h3>
+                <p class="speaker__subtitle">
+                  Regional Sales Manager - Surgical at Alcon Egypt
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide speaker">
+              <img
+                src="imgs/speaker-2.jpg"
+                alt="A photo of Dr. Heba Elnokoudy"
+              />
+              <div class="speaker__info">
+                <h3 class="subheading speaker__title">Dr. Heba Elnokoudy</h3>
+                <p class="speaker__subtitle">
+                  Clinical research at king college London 𝐎𝐧𝐜𝐨𝐥𝐨𝐠𝐲 𝐏𝐡𝐚𝐫𝐦𝐚𝐜𝐲
+                  𝐋𝐞𝐚𝐝𝐞𝐫, 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡𝐞𝐫, 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐞𝐝 𝐈𝐧𝐬𝐭𝐫𝐮𝐜𝐭𝐨𝐫 & 𝐂𝐚𝐫𝐞𝐞𝐫 𝐒𝐭𝐫𝐚𝐭𝐞𝐠𝐢𝐬𝐭
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide speaker">
+              <img
+                src="imgs/speaker-3.png"
+                alt="A photo of Dr. Muhammad Hosni"
+              />
+              <div class="speaker__info">
+                <h3 class="subheading speaker__title">Dr. Muhammad Hosni</h3>
+                <p class="speaker__subtitle">
+                  Quality assurance and Lean Manager
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide speaker">
+              <img src="imgs/speaker-4.jpg" alt="A photo of Dr. Asmaa Salman" />
+              <div class="speaker__info">
+                <h3 class="subheading speaker__title">Dr. Asmaa Salman</h3>
+                <p class="speaker__subtitle">
+                  General Director of Marketing & Business Development at Egypt
+                  Healthcare Authority
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2 data-aos="fade-up" class="main-title">Sponsors</h2>
+
+        <div class="sponsors">
+          <div class="sponsor sponsor-1">
+            <img
+              src="imgs/sponsors/sponsor-1.png"
+              alt="beyond insurance Logo"
+            />
+          </div>
+          <div class="sponsor sponsor-2">
+            <img src="imgs/sponsors/sponsor-2.png" alt="fresenius kabi logo" />
+          </div>
+          <div class="sponsor sponsor-3">
+            <img src="imgs/sponsors/sponsor-3.png" alt="inova logo" />
+          </div>
+          <div class="sponsor sponsor-4">
+            <img
+              class="sponsor-logo"
+              src="imgs/sponsors/sponsor-4.png"
+              alt="wellness logo"
+            />
+          </div>
+          <div class="sponsor sponsor-5">
+            <img src="imgs/sponsors/sponsor-5.jpeg" alt="utopia logo" />
+          </div>
+          <div class="sponsor sponsor-6">
+            <img src="imgs/sponsors/sponsor-6.jpeg" alt="utopia logo" />
+          </div>
+          <div class="sponsor sponsor-7">
+            <img src="imgs/sponsors/sponsor-7.jpeg" alt="betadine logo" />
+          </div>
+        </div>
+      </section>
+
       <section class="features container">
         <h2 data-aos="fade-up" class="main-title">Features</h2>
 
@@ -501,8 +611,6 @@
 
       <section class="contact container">
         <h2 class="main-title">Contact Us</h2>
-        <!-- action="https://formspree.io/f/mrbazqoq"
-          method="POST" -->
         <form data-aos="fade-up" id="contactForm" autocomplete="off">
           <input
             class="req"
@@ -559,7 +667,12 @@
             </p>
             <div class="pay__btn">
               <img src="imgs/visa.png" alt="" />
-              <button class="filled-btn">Pay By Visa</button>
+              <a
+                target="_blank"
+                href="https://app.fawaterk.com/pg/pharmaz"
+                class="filled-btn"
+                >Pay By Visa</a
+              >
             </div>
           </div>
           <div class="contact__info box">
@@ -723,9 +836,7 @@
         <p class="copy">Copyright © 2025 MedZ - All rights reserved.</p>
       </div>
     </footer>
-    <button id="backToTop" title="Go to top">
-      <i data-lucide="chevron-up"></i>
-    </button>
+    <a href="#reg" id="register" title="Go to top">Register Now</a>
 
     <!-- main -->
     <script type="module" src="js/main.js"></script>
@@ -742,5 +853,8 @@
         offset: 100, // trigger point (px from top of screen)
       });
     </script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

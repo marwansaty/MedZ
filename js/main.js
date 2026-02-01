@@ -15,20 +15,15 @@ overlay.addEventListener("click", (e) => {
 });
 
 /* -------------------- Back to top -------------------- */
-const backToTopBtn = document.getElementById("backToTop");
+const registerBtn = document.getElementById("register");
 
 // Show/hide button on scroll
 window.addEventListener("scroll", () => {
   if (window.scrollY > 200) {
-    backToTopBtn.classList.add("show");
+    registerBtn.classList.add("show");
   } else {
-    backToTopBtn.classList.remove("show");
+    registerBtn.classList.remove("show");
   }
-});
-
-// Scroll to top smoothly on click
-backToTopBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 /* -------------------- Popups using Popper -------------------- */
@@ -327,3 +322,25 @@ async function trackLeadWithEmail(email) {
   });
   fbq("track", "Lead");
 }
+
+/* -------------------- Swiper -------------------- */
+const speakersSwiper = new Swiper(".speakers-swiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 24,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  autoplay: {
+    delay: 2500, // time between slides in milliseconds (3 seconds here)
+    disableOnInteraction: false, // continue autoplay after user interacts (swipe/click)
+  },
+
+  breakpoints: {
+    640: { slidesPerView: 1.2 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  },
+});
