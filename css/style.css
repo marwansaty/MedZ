@@ -902,7 +902,7 @@ header .container {
   position: absolute;
   left: max(calc(110px * 7), 100%);
   animation-name: infinite-scroll;
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -923,31 +923,31 @@ header .container {
 }
 
 .sponsor-1 {
-  animation-delay: calc(10s / 7 * (7 - 1) * -1);
+  animation-delay: calc(15s / 7 * (7 - 1) * -1);
 }
 
 .sponsor-2 {
-  animation-delay: calc(10s / 7 * (7 - 2) * -1);
+  animation-delay: calc(15s / 7 * (7 - 2) * -1);
 }
 
 .sponsor-3 {
-  animation-delay: calc(10s / 7 * (7 - 3) * -1);
+  animation-delay: calc(15s / 7 * (7 - 3) * -1);
 }
 
 .sponsor-4 {
-  animation-delay: calc(10s / 7 * (7 - 4) * -1);
+  animation-delay: calc(15s / 7 * (7 - 4) * -1);
 }
 
 .sponsor-5 {
-  animation-delay: calc(10s / 7 * (7 - 5) * -1);
+  animation-delay: calc(15s / 7 * (7 - 5) * -1);
 }
 
 .sponsor-6 {
-  animation-delay: calc(10s / 7 * (7 - 6) * -1);
+  animation-delay: calc(15s / 7 * (7 - 6) * -1);
 }
 
 .sponsor-7 {
-  animation-delay: calc(10s / 7 * (7 - 7) * -1);
+  animation-delay: calc(15s / 7 * (7 - 7) * -1);
 }
 
 @keyframes infinite-scroll {
