@@ -906,9 +906,9 @@ header .container {
   width: 110px;
   height: 110px;
   position: absolute;
-  left: max(calc(110px * 8), 100%);
+  left: max(calc(110px * var(--sponsor-count)), 100%);
   animation-name: infinite-scroll;
-  animation-duration: 15s;
+  animation-duration: var(--duration);
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: calc(
@@ -1101,6 +1101,11 @@ select:hover {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  background-color: var(--accent);
+}
+
+.pay a:hover {
+  background-color: var(--accent-hover);
 }
 
 .contact__info {
