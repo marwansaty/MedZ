@@ -1095,6 +1095,11 @@ select:hover {
   text-align: center;
 }
 
+.pay.only-mobile {
+  width: 100%;
+  max-width: 450px;
+}
+
 .pay a {
   width: 100%;
   display: flex;
@@ -1106,6 +1111,10 @@ select:hover {
 
 .pay a:hover {
   background-color: var(--accent-hover);
+}
+
+.only-mobile {
+  display: none;
 }
 
 .contact__info {
@@ -1180,6 +1189,13 @@ button:disabled {
   .contact__info,
   .contact__info .email {
     justify-content: center;
+  }
+
+  .only-mobile {
+    display: block;
+  }
+  .pay:not(.only-mobile) {
+    display: none;
   }
 }
 
