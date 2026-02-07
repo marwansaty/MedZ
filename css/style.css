@@ -1097,7 +1097,10 @@ select:hover {
 
 .pay.only-mobile {
   width: 100%;
-  max-width: 450px;
+  max-width: 560px;
+  margin-block-start: -2.5rem;
+  margin-block-end: 1.5rem;
+}
 }
 
 .pay a {
