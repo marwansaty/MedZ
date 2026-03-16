@@ -35,8 +35,8 @@
   --shadow-2: 0 5px 15px rgba(0, 0, 0, 0.1);
 
   /* Variables */
-  --sponsor-count: 9;
-  --duration: 15s;
+  --sponsor-count: 21;
+  --duration: 20s;
 }
 
 *,
@@ -863,6 +863,7 @@ header .container {
   font-size: 14px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   overflow: hidden;
 }
 
@@ -872,10 +873,16 @@ header .container {
 
 .speakers-swiper {
   overflow: hidden;
+  padding-block: 8px;
+}
+
+@media (max-width: 650px) {
+  .speakers-swiper {
+    padding-inline: 4px;
+  }
 }
 
 .swiper-slide-active {
-  transform: scale(1.05);
   opacity: 1;
 }
 
@@ -883,6 +890,12 @@ header .container {
 .swiper-button-prev::after {
   color: var(--primary);
   font-size: 2rem;
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: var(--accent);
+  transition: color 0.15s ease;
 }
 
 /* Sponsors */
@@ -906,14 +919,14 @@ header .container {
   width: 110px;
   height: 110px;
   position: absolute;
-  left: max(calc(110px * var(--sponsor-count)), 100%);
+  left: max(calc(150px * var(--sponsor-count)), 100%);
   animation-name: infinite-scroll;
   animation-duration: var(--duration);
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: calc(
-    var(--duration) / var(--sponsor-count) *
-      (var(--sponsor-count) - var(--i)) * -1
+    var(--duration) / var(--sponsor-count) * (var(--sponsor-count) - var(--i)) *
+      -1
   );
 }
 
@@ -931,11 +944,9 @@ header .container {
   border-radius: 12px;
 }
 
-
-
 @keyframes infinite-scroll {
   to {
-    left: -110px;
+    left: -150px;
   }
 }
 /* Features */
@@ -1084,7 +1095,7 @@ select:hover {
 .contact__right {
   display: flex;
   flex-direction: column;
-  justify-content: top; /* disable when enabling pay */
+  justify-content: flex-start;
   gap: 2rem;
   width: 100%;
   max-width: 600px;
@@ -1101,7 +1112,6 @@ select:hover {
   margin-block-start: -2.5rem;
   margin-block-end: 1.5rem;
 }
-
 
 .pay a {
   width: 100%;

@@ -329,17 +329,17 @@ const speakersSwiper = new Swiper(".speakers-swiper", {
   slidesPerView: 1.2,
   spaceBetween: 24,
   loop: true,
+  loopAdditionalSlides: 3,
+  grabCursor: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
   autoplay: {
-    delay: 2500, // time between slides in milliseconds (3 seconds here)
-    disableOnInteraction: false, // continue autoplay after user interacts (swipe/click)
+    delay: 2500,
+    disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
-
   breakpoints: {
     640: { slidesPerView: 1.2 },
     768: { slidesPerView: 2 },
