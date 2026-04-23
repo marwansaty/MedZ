@@ -1175,6 +1175,7 @@ select:hover {
 .contact .link:hover {
   background-color: var(--accent);
 }
+
 .contact .main-title {
   display: none;
 }
